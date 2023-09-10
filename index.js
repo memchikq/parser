@@ -73,7 +73,7 @@ async function getDataByNumber(number) {
         const limit = number < 0 ? 30 : number * 30
         
         const {list} = await delayedLoopWithGenerator(limit)
-        fs.writeFileSync('test.json', JSON.stringify(list));
+       
 
     return list
   } catch (e) {
